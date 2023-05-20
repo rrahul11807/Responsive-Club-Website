@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 20px;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: hsl(18 100% 68% / 1.51);
+    background-color: hsl(212deg 75% 43% / 89%);
+}
+
+/*Header and Footer*/
+header, footer{
+    background-color: hsla(210, 75%, 26%, 1);
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li a{
+    display: block;
+    text-decoration: none;
+    padding: 1.5rem;                                            
+    font-size: 1.5rem;
+    color: hsla(18, 100%, 60%, 1);
+}
+
+li a:hover{
+    background-color: hsla(210, 75%, 6%, 0.5);;
+}
+
+/*Tablet Screen*/
+@media only screen and (max-width:768px) {
+    li a{
+        font-size: 1.25rem;
+        padding: 1.25rem;
+    }
+}
+
+/* Mobile Screen*/
+@media only screen and (max-width:548px) {
+    li a{
+        font-size:0.65rem;
+        padding: 0.9rem;
+    }
+    ul{
+        justify-content: center;
+    }   
+}
+
+/* Banner */
+.banner{
+    background-image: url('../images/Shivaji\ Park.jpg');
+    background-size: cover;
+    height: 30rem;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner h1{
+    font-size: 5rem;
+    font-family: 'Special Elite', cursive;
+    color: hsla(18, 100%, 60%, 1);
+    background-color: hsla(210, 100%, 26%, 0.5);;
+}
+
+/* Laptop Screen */
+@media only screen and (max-width:1160px) {
+    .banner h1{
+        font-size: 4rem;
+    }    
+}
+
+/* Tablet Screen */
+@media only screen and (max-width:860px) {
+    .banner{
+        height: 25rem;
+    }
+    .banner h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+/* Mobile Screen */
+@media only screen and (max-width:548px) {
+    .banner{
+        height: 20rem;
+        padding: 0rem 4rem;
+        text-align: center;
+        background-position: right;
+    }
+    .banner h1{
+        font-size: 1.25rem;
+    }    
+}
+
+/* Meet up*/
+.meet_up{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+
+}
+.meet_up h2{
+    font-size: 1.75rem;
+    line-height: 2;
+
+}
+.meet_up p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+/* Tablet Screen*/
+
+@media only screen and (max-width:860px){
+    .meet_up h2{
+        font-size: 1.5rem;
+    }
+    .meet_up p{
+        font-size: 1.25rem;
+    }
+    
+}
+
+/* Mobile Screen*/
+
+@media only screen and (max-width:548px){
+    .meet_up h2{
+        font-size: 0.75rem;
+    }
+    .meet_up p{
+        font-size: 0.5rem;
+        text-align: justify;
+    }
+}
+
+/* Members */
+.member{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.member img{
+    width: 100%;
+    max-width: 20rem;
+    min-width: 10rem;
+    padding: 0.5rem;
+}
+
+/*Tablet Screen*/
+@media only screen and (max-width:860px) {
+    .member img{
+        width: 30%;
+    }
+}
+
+/*Quote*/
+.quote{
+    margin: 1rem;
+    padding: 1rem;
+}
+.quote p{
+    font-family: 'Charm', cursive;
+    font-size: 1.75rem;
+    line-height: 1.5;
+}
+/* Tablet Screen */
+@media only screen and (max-width:860px) {
+    .quote p{
+        font-size: 1.5rem;
+    }
+}
+/* Mobile Screen */
+@media only screen and (max-width:548px) {
+    .quote p{
+        font-size: 0.8rem;
+    }
+}
+
+/*Event Stadiums*/
+.stadium{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.stadium img{
+    width: 100%;
+    max-width: 20rem;
+    padding: 0.5rem;
+}
+
+/* Mobile Screen */
+@media only screen and (max-width:548px) {
+    .stadium img{
+        max-width: 15rem;
+    }
+}
+
+/* Invite */
+.invite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+
+}
+.invite img{
+    padding: 1rem;
+    width: 100%;
+    max-width: 20rem;
+}
+
+.invite p{
+    font-size: 1.5rem;
+}
+
+/* Tablet Screen */
+@media only screen and (max-width:860px){
+   
+    .invite p{
+        font-size: 1.25rem;
+    }
+    
+}
+
+/* Mobile Screen*/
+
+@media only screen and (max-width:548px){
+    .invite p{
+        font-size: 1rem;
+    }
+}
